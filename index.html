@@ -48,8 +48,12 @@
     background:rgba(22,74,80,.92);backdrop-filter:blur(8px);
   }
   .topbar .wrap{display:flex;align-items:center;gap:10px;padding:14px 24px;}
-  .brand-lockup{display:flex;align-items:center;flex-shrink:0;text-decoration:none;}
-  .brand-lockup img{height:54px;width:auto;display:block;}
+  .brand{display:flex;align-items:center;gap:12px;flex-shrink:0;text-decoration:none;}
+  .brand-icon{height:54px;width:auto;display:block;}
+  .topbar .brand-name{
+    font-family:'Playfair Display',serif;font-weight:600;font-size:1.05rem;
+    color:var(--shell);line-height:1.2;
+  }
   .topbar .brand-tag{
     display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:.68rem;
     letter-spacing:.06em;color:var(--sky);opacity:.85;
@@ -287,7 +291,8 @@
   /* ---------- minimal top bar, no exit links ---------- */
   #checkout-view .topbar{background:var(--sea);}
   #checkout-view .topbar .wrap{display:flex;align-items:center;gap:12px;padding:16px 24px;}
-  #checkout-view .brand-lockup img{height:54px;}
+  #checkout-view .brand-icon{height:54px;}
+  #checkout-view .brand-name{font-size:1.05rem;}
   #checkout-view .brand-tag{
     display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:.68rem;
     letter-spacing:.06em;color:var(--sky);opacity:.85;
@@ -417,7 +422,10 @@
 <div id="landing-view">
 <div class="topbar">
   <div class="wrap">
-    <div class="brand-lockup"><img src="assets/brand-logo-lockup.png" alt="Anna Brooke Healing"></div>
+    <div class="brand">
+      <img class="brand-icon" src="anna-brooke-healing-logo@.png" alt="">
+      <div class="brand-name">Anna Brooke Healing</div>
+    </div>
     <a class="cta-mini" href="#checkout" onclick="showCheckout();return false;">Reserve your spot</a>
   </div>
 </div>
@@ -580,8 +588,9 @@
 <div id="checkout-view">
 <div class="topbar">
   <div class="wrap">
-    <a class="brand-lockup" href="#" onclick="showLanding();return false;">
-      <img src="assets/brand-logo-lockup.png" alt="Anna Brooke Healing">
+    <a class="brand" href="#" onclick="showLanding();return false;">
+      <img class="brand-icon" src="anna-brooke-healing-logo@.png" alt="">
+      <div class="brand-name">Anna Brooke Healing</div>
     </a>
     <div class="secure-badge">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
