@@ -188,6 +188,12 @@
     color:var(--sky);font-weight:700;margin-bottom:4px;
   }
   .tide-node .day{font-family:'Playfair Display',serif;font-weight:700;font-size:1.8rem;color:var(--paper);}
+  .tide-node .status{
+    font-family:'Inter',sans-serif;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;
+    font-weight:700;margin-top:8px;color:var(--sky);
+  }
+  .tide-node.is-past{opacity:.5;}
+  .tide-node.is-past .status{opacity:1;}
 
   /* ================= PRICING (asymmetric paths) ================= */
   .paths-wrap{display:flex;gap:28px;margin-top:48px;align-items:center;flex-wrap:wrap;}
@@ -447,11 +453,11 @@
       <div class="meta-chip">🌙 Monthly</div>
       <div class="meta-chip">⏱ 90 minutes</div>
       <div class="meta-chip">🕚 11:00 AM–12:30 PM ET</div>
-      <div class="meta-chip">📅 Begins Oct 17</div>
+      <div class="meta-chip">📅 Nov 21 &amp; Dec 19</div>
     </div>
 
     <a class="cta-primary" href="#checkout" onclick="showCheckout();return false;">Reserve your spot</a>
-    <div class="cta-note">A single ticket is good for any of the 3 dates, or save with the 3-workshop season</div>
+    <div class="cta-note">One remaining workshop is $47. November 21 and December 19 together are $80.</div>
   </div>
 </header>
 
@@ -494,37 +500,37 @@
 <section class="tide-section">
   <div class="wrap center">
     <div class="section-title">Join the cycle</div>
-    <p class="section-lede center">One gathering a month, like clockwork. Each workshop runs from 11:00 AM to 12:30 PM ET. Come for one, or ride the whole season.</p>
+    <p class="section-lede center">October 17 has concluded. Two gatherings remain, each from 11:00 AM to 12:30 PM ET. Come for one, or take both.</p>
 
     <div class="tide-row">
-      <div class="tide-node"><div class="moon">🌘</div><div class="month">October</div><div class="day">17</div></div>
+      <div class="tide-node is-past"><div class="moon">🌘</div><div class="month">October</div><div class="day">17</div><div class="status">Concluded</div></div>
       <div class="tide-node"><div class="moon">🌗</div><div class="month">November</div><div class="day">21</div></div>
       <div class="tide-node"><div class="moon">🌕</div><div class="month">December</div><div class="day">19</div></div>
     </div>
-    <p class="section-lede center" style="margin-top:24px;">A single ticket is good for any one of these three dates (11:00 AM–12:30 PM ET each). And the rhythm doesn't end here. In the new year, Anna will continue offering monthly sessions reflective of each season.</p>
+    <p class="section-lede center" style="margin-top:24px;">A single ticket is $47, good for either November 21 or December 19. Both remaining workshops are $80. The rhythm doesn't end here. In the new year, Anna will continue offering monthly sessions reflective of each season.</p>
   </div>
 </section>
 
 <section id="pricing">
   <div class="wrap">
     <div class="section-title center">Choose your rhythm</div>
-    <p class="section-lede center" style="margin:0 auto 20px;">Dip in for one session, or commit to the full three-month cycle.</p>
+    <p class="section-lede center" style="margin:0 auto 20px;">Dip in for one remaining session, or take November and December together.</p>
 
     <div class="paths-wrap">
       <div class="path-card">
         <div class="label path-label">Dip in</div>
         <h3>Single Workshop</h3>
         <div class="amount">$47</div>
-        <p class="desc">One 90-minute session. Good for any of the three dates, come whenever it calls to you.</p>
+        <p class="desc">One 90-minute session. Good for either November 21 or December 19.</p>
         <a class="cta-primary" href="#checkout-single" onclick="showCheckout('single');return false;">Reserve a single spot</a>
       </div>
       <div class="path-card featured">
-        <span class="badge">Save $21</span>
-        <div class="label path-label">Ride the full cycle</div>
-        <h3>3-Workshop Season</h3>
-        <div class="amount">$120</div>
-        <p class="desc">October, November, and December, all three sessions. A season of self-care: a monthly ritual of resetting and reconnecting with your true self.</p>
-        <a class="cta-primary" href="#checkout-season" onclick="showCheckout('season');return false;">Reserve the season</a>
+        <span class="badge">Save $14</span>
+        <div class="label path-label">Take both dates</div>
+        <h3>Both Workshops</h3>
+        <div class="amount">$80</div>
+        <p class="desc">November 21 and December 19. Two gatherings to reset and reconnect, $14 less than booking them one at a time.</p>
+        <a class="cta-primary" href="#checkout-season" onclick="showCheckout('season');return false;">Reserve both dates</a>
       </div>
     </div>
   </div>
@@ -552,11 +558,11 @@
     <div class="section-title">Good to know</div>
     <details class="accordion-item" open>
       <summary>How often does this run?</summary>
-      <div class="a-body">Once a month, from 11:00 AM to 12:30 PM ET. Upcoming dates are October 17, November 21, and December 19, and in the new year Anna will continue offering monthly sessions reflective of each season.</div>
+      <div class="a-body">Once a month, from 11:00 AM to 12:30 PM ET. October 17 has concluded. The remaining dates are November 21 and December 19, and in the new year Anna will continue offering monthly sessions reflective of each season.</div>
     </details>
     <details class="accordion-item">
-      <summary>Should I book a single workshop or the season?</summary>
-      <div class="a-body">A single workshop is $47 and is good for any one of the three dates. All three, October through December, are $120, a savings of $21 over booking them one at a time, and a season of self-care: a monthly ritual of resetting and reconnecting with your true self.</div>
+      <summary>Should I book one workshop or both?</summary>
+      <div class="a-body">A single workshop is $47 and is good for either November 21 or December 19. Both remaining workshops are $80, a savings of $14 over booking them one at a time.</div>
     </details>
     <details class="accordion-item">
       <summary>What will we actually do?</summary>
@@ -605,7 +611,7 @@
   <div class="wrap">
     <div class="label kicker">You're one step away</div>
     <h1>Choose your rhythm, and complete your enrollment.</h1>
-    <p>Pick a single workshop (good for any of the 3 dates) or the full 3-workshop season below.</p>
+    <p>October 17 has concluded. Choose one remaining workshop for $47, or both November 21 and December 19 for $80.</p>
   </div>
 </header>
 
@@ -620,8 +626,8 @@
         <span class="t-price">$47</span>
       </label>
       <label for="plan-season">
-        <span class="t-name">3-Workshop Season</span>
-        <span class="t-price">$120</span><span class="t-save">Save $21</span>
+        <span class="t-name">Both Workshops</span>
+        <span class="t-price">$80</span><span class="t-save">Save $14</span>
       </label>
     </div>
 
@@ -629,7 +635,7 @@
       <div class="checkout-grid">
         <div class="summary-card">
           <h2>Single Workshop</h2>
-          <div class="summary-sub">One 90-minute Reset &amp; Reconnect session with Anna Brooke, good for any of the 3 dates below</div>
+          <div class="summary-sub">One 90-minute Reset &amp; Reconnect session with Anna Brooke, good for either remaining date below</div>
 
           <div class="price-row">
             <span class="pr-label">Total</span>
@@ -637,7 +643,6 @@
           </div>
 
           <div class="dates-mini">
-            <span class="date-chip">Oct 17</span>
             <span class="date-chip">Nov 21</span>
             <span class="date-chip">Dec 19</span>
             <p class="workshop-time">Each date: 11:00 AM–12:30 PM ET</p>
@@ -687,17 +692,16 @@
     <div class="panel panel-season">
       <div class="checkout-grid">
         <div class="summary-card">
-          <h2>3-Workshop Season</h2>
-          <div class="summary-sub">October, November &amp; December with Anna Brooke, a season of self-care</div>
+          <h2>Both Workshops</h2>
+          <div class="summary-sub">November 21 and December 19 with Anna Brooke</div>
 
           <div class="price-row">
             <span class="pr-label">Total</span>
-            <span class="pr-value">$120.00</span>
+            <span class="pr-value">$80.00</span>
           </div>
-          <p style="font-family:'Inter',sans-serif;font-size:.82rem;color:var(--ochre);font-weight:600;margin-top:10px;">Save $21 versus booking individually</p>
+          <p style="font-family:'Inter',sans-serif;font-size:.82rem;color:var(--ochre);font-weight:600;margin-top:10px;">Save $14 versus booking individually</p>
 
           <div class="dates-mini">
-            <span class="date-chip">Oct 17</span>
             <span class="date-chip">Nov 21</span>
             <span class="date-chip">Dec 19</span>
             <p class="workshop-time">Each date: 11:00 AM–12:30 PM ET</p>
@@ -705,10 +709,10 @@
 
           <div class="includes-title">What's included</div>
           <ul class="includes-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> All three 90-minute workshops</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Both remaining 90-minute workshops</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> A different custom blend each month</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Breathwork, meditation, self-exploration, and creative practice</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> $21 in savings over single-session pricing</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> $14 in savings over single-session pricing</li>
           </ul>
 
           <div class="mini-quote">&ldquo;A monthly ritual of resetting and reconnecting with your true self.&rdquo;</div>
@@ -717,7 +721,7 @@
         <div class="form-card">
           <div class="form-card-header">
             <h2>Enroll now</h2>
-            <p>Reserve your spot for all three workshops.</p>
+            <p>Reserve your spot for both remaining workshops.</p>
           </div>
           <div class="form-embed-wrap">
             <iframe
@@ -737,7 +741,7 @@
                 data-form-id="WEHA94UPyxhAvBRtk1ha"
                 data-cookie-consent="true"
                 data-cookie-consent-provider="auto"
-                title="3-workshop season Enroll  "
+                title="Both workshops enrollment"
             >
             </iframe>
           </div>
@@ -765,11 +769,11 @@
       <div class="faq-grid">
         <div class="faq-item">
           <h3>Which option is right for me?</h3>
-          <p>If you want to try it once, start with a single workshop. If you know you want the full monthly rhythm, the season saves you $21.</p>
+          <p>If you want to try it once, book a single workshop for $47. Both remaining dates together are $80, a savings of $14.</p>
         </div>
         <div class="faq-item">
           <h3>What are the dates?</h3>
-          <p>October 17, November 21, and December 19. Each workshop runs from 11:00 AM to 12:30 PM ET. A single workshop ticket is good for any one of these three dates. In the new year, Anna will continue offering monthly sessions reflective of each season.</p>
+          <p>October 17 has concluded. The remaining workshops are November 21 and December 19, each from 11:00 AM to 12:30 PM ET. One is $47. Both are $80. In the new year, Anna will continue offering monthly sessions reflective of each season.</p>
         </div>
         <div class="faq-item">
           <h3>What will we actually do?</h3>
